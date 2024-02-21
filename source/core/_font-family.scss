@@ -1,0 +1,53 @@
+/* core : font families - ==================================================================================== - */
+// scss variables //
+$_family: 'Inter';
+$_url: '/inter/';
+
+/* inter ------------------------------------------------------------------------------------------------------- */
+/* 400, regular */
+@font-face {
+  font-family: $_family;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('#{$_url}400.woff2') format('woff2'),
+    url('#{$_url}400.woff') format('woff')
+  ;
+};
+
+/* 600, semi bold */
+@font-face {
+  font-family: $_family;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url('#{$_url}600.woff2') format('woff2'),
+    url('#{$_url}600.woff') format('woff')
+  ;
+};
+
+/* 700, bold */
+@font-face {
+  font-family: $_family;
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('#{$_url}700.woff2') format('woff2'),
+    url('#{$_url}700.woff') format('woff')
+  ;
+};
+
+/* variable */
+@font-face {
+  font-family: '#{$_family} (Variable)';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 700;
+  src:
+    url('#{$_url}variable.woff2') format('woff2'),
+    url('#{$_url}variable.woff') format('woff')
+  ;
+};
