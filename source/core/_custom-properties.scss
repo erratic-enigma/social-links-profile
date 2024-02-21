@@ -1,0 +1,37 @@
+/* core : root custom properties - =========================================================================== - */
+@use '@/scss/units' as unit;
+
+:root {
+  /* system font families */
+  --system-fontFamily-mono: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console', monospace;
+  --system-fontFamily-sansSerif: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'segoe ui', 'helvetica neue', helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+
+  /* font families */
+  --core-fontFamily-inter: Inter;
+  --core-fontFamily-interVariable: 'Inter (Variable)';
+
+  /* font sizes */
+  --core-fontSize-60: #{unit.rem(12)};
+  --core-fontSize-80: #{unit.rem(14)};
+  --core-fontSize-150: #{unit.rem(24)};
+
+  /* font weights */
+  --core-fontWeight-normal: 400;
+  --core-fontWeight-medium: 600;
+  --core-fontWeight-big: 700;
+
+  /* line heights */
+  --core-lineHeight-normal: 1.6;
+
+  /* colours (hsl) */
+  --core-color-rajah: 34 100% 73%;
+  --core-color-inchWorm: 75 94% 57%;
+  --core-color-pixieGreen: 107 33% 79%;
+
+  /* neutrals (rgb) */
+  --core-neutral-shark: 31 31 31;
+  --core-neutral-white: 255 255 255;
+  --core-neutral-seashell: 240 240 240;
+  --core-neutral-marshland: 20 20 20;
+  --core-neutral-mineShaft: 51 51 51;
+}

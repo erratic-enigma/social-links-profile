@@ -4,17 +4,3 @@
 // core //
 @use '@/core/font-family';
 @use '@/core/custom-properties';
-@use '@/core/base';
-
-// layouts //
-@use '@/layouts/body';
-@use '@/layouts/main';
-@use '@/layouts/footer';
-
-// components //
-@use '@/components/attribution-bar';
-@use '@/components/circle-image';
-@use '@/components/link-button';
-@use '@/components/list-stack';
-@use '@/components/profile-overview';
-@use '@/components/social-profile';
