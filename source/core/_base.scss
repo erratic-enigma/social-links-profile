@@ -1,0 +1,44 @@
+/* core : base - ============================================================================================= - */
+@use '@/scss/units' as unit;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: rgb(var(--core-neutral-marshland, 255 255 255));
+  font:
+    var(--core-fontWeight-normal, 400) normal
+    var(--core-fontSize-80, unit.rem(16)) / var(--core-lineHeight-normal, 1.6)
+    var(--system-fontFamily-sansSerif, sans-serif)
+  ;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+  height: auto;
+  font-family: var(--system-fontFamily-mono, monospace);
+  font-size: var(--core-fontSize-60, unit.rem(12));
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+:is(a, p, h1, h2, h3) {
+  overflow-wrap: break-word;
+}
