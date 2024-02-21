@@ -19,7 +19,7 @@ This is my solution to the [Social links profile component challenge](https://ww
 
 ### Links
 
-- Solution URL:
+- Solution URL: <https://www.frontendmentor.io/solutions/social-links-profile-component-GFy0miJz5F>
 - Live Site URL: <https://erratic-enigma.github.io/social-links-profile>
 
 ## My process
