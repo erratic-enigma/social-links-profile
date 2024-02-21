@@ -1,0 +1,16 @@
+{
+  "name": "social-links-profile",
+  "description": "Development environment for 'Social Links Profile'.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "vite serve",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "sass": "^1.0.0",
+    "vite": "^4.0.0"
+  }
+}
