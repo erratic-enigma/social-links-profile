@@ -5,9 +5,50 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta name='author' content='Erratic Enigma'>
   <meta name='description' content="Implementation of the 'Social Links Profile' project from Frontend Mentor.">
+
+  <!-- favicon nonsense -->
+  <link rel='icon' href='/favicon.ico' sizes='48x48'>
+  <link rel='icon' href='/favicon.svg' sizes='any' type='image/svg+xml'>
+  <link rel='apple-touch-icon' href='/apple-touch-icon.png'>
+  <link rel='manifest' href='/.webmanifest'>
+
   <script src='/source/views/index.js' type='module'></script>
   <title>Social Links Profile</title>
 </head>
-<body>
+<body class='l-body'>
+  <main class='l-main'>
+    <article class='social-profile'>
+      <figure class='profile-overview details'>
+        <img class='circle-image image' data-context='social-profile' src='/avatar.webp' alt="Jessica Randall's avatar.">
+        <h2 class='name'>Jessica Randall</h2>
+        <p class='location'>London, United Kingdom</p>
+        <p class='description'>"Front-end developer and avid reader."</p>
+      </figure>
+
+      <address class='links'>
+        <ul class='list-stack'>
+          <li>
+            <a class='link-button' href='https://github.com' target='_blank'>GitHub</a>
+          </li>
+          <li>
+            <a class='link-button' href='https://frontendmentor.io' target='_blank'>Frontend Mentor</a>
+          </li>
+          <li>
+            <a class='link-button' href='https://linkedin.com' target='_blank'>LinkedIn</a>
+          </li>
+          <li>
+            <a class='link-button' href='https://twitter.com' target='_blank'>Twitter</a>
+          </li>
+          <li>
+            <a class='link-button' href='https://instagram.com' target='_blank'>Instagram</a>
+          </li>
+        </ul>
+      </address>
+    </article>
+  </main>
+  <footer class='l-footer attribution-bar' data-variant='light'>
+    Challenge by <a class='link' href='https://www.frontendmentor.io?ref=challenge' target='_blank'>Frontend Mentor</a>.
+    Coded by <a class='link' href='https://github.com/erratic-enigma'>Erratic Enigma</a>.
+  </footer>
 </body>
 </html>
