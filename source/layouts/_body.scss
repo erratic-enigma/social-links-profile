@@ -1,0 +1,19 @@
+/* layout : body - =========================================================================================== - */
+@use '@/scss/units' as unit;
+
+.l-body {
+  & {
+    --layout-gutterSize: #{unit.rem(32)};
+
+    display: grid;
+    grid-template-areas:
+      'component'
+      'attributes'
+    ;
+    grid-template-rows: 1fr auto;
+  }
+
+  > * {
+    grid-area: var(--layout-gridArea);
+  }
+}

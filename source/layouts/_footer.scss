@@ -1,0 +1,12 @@
+/* layout : footer - ========================================================================================= - */
+@use '@/scss/units' as unit;
+
+.l-footer {
+  --layout-gridArea:      attributes;
+  --layout-paddingHeight: #{unit.rem(12)};
+
+  padding:
+    var(--layout-paddingHeight)
+    calc(var(--layout-gutterSize) / 2)
+  ;
+}

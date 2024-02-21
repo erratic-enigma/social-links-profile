@@ -1,0 +1,15 @@
+/* layout : main - =========================================================================================== - */
+@use '@/scss/units' as unit;
+
+.l-main {
+  & {
+    --size-max:  #{unit.rem(342)};
+    --layout-gridArea: component;
+
+    place-self: center;
+    width: min(
+      var(--size-max),
+      100vw - var(--layout-gutterSize)
+    );
+  }
+}

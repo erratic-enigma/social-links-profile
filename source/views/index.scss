@@ -5,3 +5,8 @@
 @use '@/core/font-family';
 @use '@/core/custom-properties';
 @use '@/core/base';
+
+// layouts //
+@use '@/layouts/body';
+@use '@/layouts/main';
+@use '@/layouts/footer';
