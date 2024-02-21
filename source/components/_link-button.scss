@@ -1,0 +1,28 @@
+/* component : link (button) - =============================================================================== - */
+@use '@/scss/units' as unit;
+
+.link-button {
+  & {
+    display: block;
+    border-radius: unit.rem(8);
+    padding-block: unit.rem(12);
+    background-color: var(--color-background);
+    font-weight: var(--core-fontWeight-big);
+    color: var(--color-text);
+  }
+
+  &:link {
+    --color-background: rgb(var(--core-neutral-mineShaft));
+    --color-text: rgb(var(--core-neutral-white));
+
+    transition:
+      background-color 125ms,
+      color 250ms
+    ;
+  }
+
+  &:is(:focus-visible, :hover, :active) {
+    --color-text: rgb(var(--core-neutral-marshland));
+    --color-background: hsl(var(--core-color-inchWorm));
+  }
+}

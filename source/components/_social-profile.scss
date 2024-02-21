@@ -1,0 +1,21 @@
+/* component : social profile - ============================================================================== - */
+@use '@/scss/units' as unit;
+
+.social-profile {
+  & {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: unit.rem(24);
+    border-radius: unit.rem(12);
+    padding: unit.rem(32);
+    background-color: rgb(var(--core-neutral-shark));
+    font-family: var(--core-fontFamily-inter);
+    text-align: center;
+    color: rgb(var(--core-neutral-white));
+  }
+
+@supports(font-variation-settings: 'wght' 400) {
+  font-family: var(--core-fontFamily-interVariable);
+}
+}

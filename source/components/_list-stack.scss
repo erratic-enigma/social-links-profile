@@ -1,0 +1,12 @@
+/* component : list stack - ================================================================================== - */
+@use '@/scss/units' as unit;
+
+.list-stack {
+  & {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--layout-gap, unit.rem(16));
+    padding: 0;
+    list-style: none;
+  }
+}

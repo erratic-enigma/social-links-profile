@@ -1,0 +1,27 @@
+/* component : profile overview - ============================================================================ - */
+@use '@/scss/units' as unit;
+
+.profile-overview {
+  & {
+    --layout-spacing: #{unit.rem(20)};
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  > .image {
+    margin-block-end: var(--layout-spacing);
+  }
+
+  > .location {
+    margin-block-end: var(--layout-spacing);
+    font-weight: var(--core-fontWeight-medium);
+    color: hsl(var(--core-color-inchWorm));
+  }
+
+  > .name {
+    font-size: var(--core-fontSize-150);
+    font-weight: var(--core-fontWeight-medium);
+  }
+}

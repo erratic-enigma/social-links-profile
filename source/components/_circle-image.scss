@@ -1,0 +1,21 @@
+/* component : circle image - ================================================================================ - */
+@use '@/scss/units' as unit;
+
+.circle-image {
+  & {
+    border-radius: 50%;
+    width: var(--box-heightWidth, auto);
+    height: var(--box-heightWidth, auto);
+  }
+
+  &[data-context*='social-profile'] {
+    --box-heightWidth: #{unit.rem(96)};
+  }
+
+@supports(clip-path: circle(0 at 0 0)) {
+  & {
+    clip-path: circle(50% at center);
+    border-radius: 0;
+  }
+}
+}

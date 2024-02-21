@@ -1,0 +1,38 @@
+/* component : attribution bar - ============================================================================= - */
+.attribution-bar {
+  & {
+    background-color: var(--color-background);
+    font-family: var(--system-fontFamily-mono);
+    font-size: var(--core-fontSize-60);
+    text-align: center;
+    color: var(--color-text);
+  }
+
+  &[data-variant*='light'] {
+    --color-link: hsl(var(--core-color-rajah));
+    --color-text: rgb(var(--core-neutral-seashell));
+    --color-background: rgb(var(--core-neutral-seashell) / 0.1);
+    --color-linkHighlight: hsl(var(--core-color-pixieGreen));
+  }
+
+  > .link {
+    transition:
+      text-decoration-color 200ms,
+      color 200ms
+    ;
+    outline: none;
+    text-decoration: underline solid transparent;
+  }
+
+  > .link:is(:link, :visited) {
+    color: var(--color-link);
+  }
+
+  > .link:is(:focus, :hover, :active) {
+    color: var(--color-linkHighlight)
+  }
+
+  > .link:focus-visible {
+    text-decoration-color: inherit;
+  }
+}
